@@ -1,0 +1,39 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} %for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} %other packages for formatting
+\usepackage[absolute]{textpos}
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage[big]{layaureo} %better formatting of the A4 page
+\usepackage{supertabular} %for Grades
+\usepackage{titlesec} %custom \section
+\usepackage{multicol} %multiple colums lists
+\usepackage{fontawesome} %github icon
+\usepackage{upgreek} % micro symbol
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+	Path = configurations/fonts/,
+	SmallCapsFont = Fontin-SmallCaps.otf,
+	BoldFont = Fontin-Bold.otf,
+	ItalicFont = Fontin-Italic.otf
+]{Fontin.otf}
+%%%
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\addtolength{\voffset}{-1.3cm} %Tweak a bit the top margin
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
