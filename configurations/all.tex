@@ -14,12 +14,13 @@
 \usepackage{multicol} %multiple colums lists
 \usepackage{fontawesome} %github icon
 \usepackage{upgreek} % micro symbol
-%Setup hyperref package, and colours for links
-\usepackage{hyperref}
+\usepackage{hyperref} % Setup hyperref package, and colours for links
+\usepackage{enumitem} % itemize spacing
+
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
-%FONTS
+% FONTS
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[
 	Path = configurations/fonts/,
@@ -29,6 +30,7 @@
 ]{Fontin.otf}
 %%%
 
+% SPACING
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 \addtolength{\voffset}{-1.3cm} %Tweak a bit the top margin
@@ -37,3 +39,5 @@
 \setlength{\TPVertModule}{\TPHorizModule}
 \textblockorigin{2mm}{0.65\paperheight}
 \setlength{\parindent}{0pt}
+
+\setlist{nolistsep, itemsep=1mm}
